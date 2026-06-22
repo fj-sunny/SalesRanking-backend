@@ -1,0 +1,17 @@
+# 复制本文件为 application-local.yaml 后填入本地配置（application-local.yaml 已被 git 忽略）
+#
+# cp application-local.yaml.example application-local.yaml   (Linux/macOS)
+# copy application-local.yaml.example application-local.yaml (Windows)
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/salesrank?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: your-mysql-password
+
+  data:
+    redis:
+      host: your-redis-host
+      port: 6379
+      password: your-redis-password
+      database: 0
